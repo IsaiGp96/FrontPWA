@@ -3,24 +3,12 @@ import React from "react";
 //import Comentarios from "@/components/Comments";
 
 // Importa las imágenes (asegúrate de que las rutas sean correctas)
-import headerDestello from "../assets/images/headerDestello.gif";
 import naicaLogo from "../assets/images/naicaLogo.png";
 import loreImage from "../assets/images/LoreImage.webp";
 
 const Home: React.FC = () => {
     return (
         <div>
-            {/* Fondo con imagen */}
-            <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                    backgroundImage: `url(${headerDestello})`,
-                    opacity: 0.5,
-                    transform: "rotate(180deg)",
-                }}
-            >
-            </div>
-
             {/* Contenido principal */}
             <div className="relative flex flex-col items-center pt-12">
                 <div className="w-full flex flex-col items-center">
