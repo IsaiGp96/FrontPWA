@@ -1,5 +1,6 @@
 import './App.css'
 import Home from './components/Home'
+import Acercade from './components/Acercade';
 import useHeaderGif from './hooks/useHeaderGift';
 import mainBanner from './hooks/mainBanner';
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
@@ -27,7 +28,7 @@ function App() {
             <Route index element={<Home/>}/>
             <Route path='wiki' element={'#'}/>
             <Route path='estadisticas' element={'#'}/>
-            <Route path='acerca' element={'#'}/>
+            <Route path='acerca' element={<Acercade/>}/>
           </Route>
         </Routes>
         </BrowserRouter>
