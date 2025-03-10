@@ -6,7 +6,7 @@ function App() {
   const headerGif = useHeaderGif();
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="w-full h-full">
       {/* Fondo global con la imagen GIF */}
       <div
         className="absolute inset-0 bg-cover bg-center"
