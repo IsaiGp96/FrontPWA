@@ -1,5 +1,14 @@
 @import "tailwindcss";
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/assets/fonts/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+body {
+  font-family: 'MyCustomFont', sans-serif;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
