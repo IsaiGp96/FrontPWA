@@ -150,7 +150,7 @@ const Carousel: React.FC = () => {
             {!loading && !error && comentarios.length > 0 && (
               <div className="flex-row justify-center relative w-full mb-6">
                 <button
-                  className="items-center bg-transparent inline-flex p-0"
+                  className="items-center bg-transparent inline-flex p-0 mx-4"
                   onClick={handlePreviousClick}
                 >
                   <svg
@@ -169,7 +169,7 @@ const Carousel: React.FC = () => {
                   </svg>
                 </button>
                 <button
-                  className="items-center bg-transparent inline-flex p-0"
+                  className="items-center bg-transparent inline-flex p-0 mx-4"
                   onClick={handleNextClick}
                 >
                   <svg
