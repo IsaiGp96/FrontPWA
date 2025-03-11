@@ -8,7 +8,9 @@ const Coments: React.FC = () => {
   const [loading, setLoading] = useState(false);
 
   const enviarComentario = async () => {
-    console.log("Usuario: " + username + " Email: " + email + " Comentario: " + comentario);
+    console.log(
+      "Usuario: " + username + " Email: " + email + " Comentario: " + comentario
+    );
     if (!username.trim() || !email.trim() || !comentario.trim()) {
       window.alert("Error: Todos los campos son obligatorios.");
       return;
@@ -40,46 +42,50 @@ const Coments: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-blue-950 p-6 rounded-lg shadow-md">
+    <div className="max-w-md mx-auto bg-[#231f1a] p-6 rounded-lg shadow-lg">
       <h2 className="text-2xl font-semibold mb-4 text-white text-center">
         Déjanos tu comentario
       </h2>
       <div className="mb-4">
-        <label className="block text-gray-300 font-medium mb-2">Nombre</label>
+        <label className="block text-white font-medium mb-2 text-justify">Nombre</label>
         <input
           type="text"
           value={username}
           onChange={(e) => setNombre(e.target.value)}
           placeholder="Tu nombre"
-          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+          className="w-full px-4 py-2 border border-[#f1f0e6] rounded focus:outline-none focus:border-[#bbfbff]"
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-300 font-medium mb-2">Correo</label>
+        <label className="block text-white font-medium mb-2 text-justify">Correo</label>
         <input
           type="email"
           value={email}
           onChange={(e) => setCorreo(e.target.value)}
           placeholder="Tu correo"
-          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+          className="w-full px-4 py-2 border border-[#f1f0e6] rounded focus:outline-none focus:border-[#bbfbff]"
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-300 font-medium mb-2">Comentario</label>
+        <label className="block text-white font-medium mb-2 text-justify">Comentario</label>
         <textarea
           value={comentario}
           onChange={(e) => setComentario(e.target.value)}
           placeholder="Tu comentario"
           rows={4}
-          className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500 resize-none"
+          className="w-full px-4 py-2 border border-[#f1f0e6] rounded focus:outline-none focus:border-[#bbfbff] resize-none"
         />
       </div>
       <button
         onClick={enviarComentario}
         disabled={loading}
-        className="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 disabled:opacity-50 transition-colors duration-200"
+        className="w-full bg-[#06e5ee] text-[#001f20] font-semibold py-2 px-4 rounded hover:bg-[#bbfbff] disabled:opacity-50 transition-colors duration-200"
       >
-        {loading ? "Cargando..." : "Enviar Comentario"}
+        {loading ? (
+          <div className="w-6 h-6 border-4 border-t-[#001f20] border-[#61f7ff] rounded-full animate-spin place-self-center"></div>
+        ) : (
+          "Enviar Comentario"
+        )}
       </button>
     </div>
   );

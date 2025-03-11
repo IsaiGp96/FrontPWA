@@ -19,34 +19,26 @@ const Home: React.FC = () => {
             className="w-[330px] h-[330px] mt-[-75px] mb-2.5"
           />
           <p
-            className="text-white"
+            className="text-white place-self-start ml-7.5"
             style={{
               fontSize: "38px",
               fontFamily: "MyCustomFont",
-              position: "absolute",
-              top: "155px",
-              left: "30px",
             }}
           >
             Lore
           </p>
-          <div
+          <div className="place-self-start ml-7.5"
             style={{
               width: "85%",
               height: "1px",
               backgroundColor: "gray",
-              position: "absolute",
-              top: "210px",
-              left: "30px",
             }}
           ></div>
           <p
-            className="text-white text-justify"
+            className="text-white text-justify mt-6 ml-7.5"
             style={{
               fontSize: "18px",
               fontFamily: "MyCustomFont",
-              margin: "0 30px",
-              marginTop: "-10px",
               lineHeight: "24px",
             }}
           >
