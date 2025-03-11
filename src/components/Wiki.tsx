@@ -17,8 +17,9 @@ const Wiki: React.FC = () => {
   return (
     <div>
       {/* Contenido principal con scroll vertical */}
-      <div className="relative overflow-y-auto p-8">
-        <div className="max-w-4xl mx-auto" style={{ fontFamily: "MyCustomFont" }}>
+      <div className="relative flex flex-col pt-12">
+      <div className="w-full flex flex-col p-8">
+        <div className="mx-auto" style={{ fontFamily: "MyCustomFont" }}>
           <h1 className="text-4xl text-white font-bold mb-4 text-left">Wiki</h1>
           <div className="w-full h-px bg-gray-500 mb-6"></div>
 
@@ -185,7 +186,7 @@ const Wiki: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div></div>
   );
 };
 

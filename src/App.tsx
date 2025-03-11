@@ -4,6 +4,8 @@ import Acercade from './components/Acercade';
 import useHeaderGif from './hooks/useHeaderGift';
 import mainBanner from './hooks/mainBanner';
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import Wiki from './components/Wiki';
+import Estadisticas from './components/Estadisticas';
 
 function App() {
   const headerGif = useHeaderGif();
@@ -22,16 +24,14 @@ function App() {
       ></div>
       {/* Contenido principal */}
       <div className="relative">
-        <BrowserRouter>
         <Routes>
           <Route path='/' element={banner}>
             <Route index element={<Home/>}/>
-            <Route path='wiki' element={'#'}/>
-            <Route path='estadisticas' element={'#'}/>
+            <Route path='wiki' element={<Wiki/>}/>
+            <Route path='estadisticas' element={<Estadisticas/>}/>
             <Route path='acerca' element={<Acercade/>}/>
           </Route>
         </Routes>
-        </BrowserRouter>
       </div>
     </div>
   )

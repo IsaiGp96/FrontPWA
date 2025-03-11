@@ -4,6 +4,7 @@ import Coments from "../statics/Coments";
 
 const Acercade: React.FC = () => {
   return (
+    <div className="relative flex flex-col pt-12 w-full h-screen">
     <div style={{ fontFamily: "MyCustomFont" }} className="px-4 pt-6 pb-0">
       <div className="flex flex-col md:flex-row justify-between md:items-start">
         {/* Sección de información */}
@@ -31,6 +32,7 @@ const Acercade: React.FC = () => {
           <Coments />
         </div>
       </div>
+    </div>
     </div>
   );
 };
