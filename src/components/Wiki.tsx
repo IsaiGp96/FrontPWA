@@ -33,7 +33,7 @@ const Wiki: React.FC = () => {
             <h1 className="text-4xl text-white font-bold mb-4 text-left">
               Wiki
             </h1>
-            <div className="w-full h-px bg-gray-500 mb-6"></div>
+            <div className="w-10/12 h-px bg-gray-500 mb-6"></div>
 
             {/* Sección de Personajes */}
             <div className="mb-8">
