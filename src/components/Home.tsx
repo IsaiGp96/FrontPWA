@@ -35,11 +35,10 @@ const Home: React.FC = () => {
             }}
           ></div>
           <p
-            className="text-white text-justify mt-6"
+            className="text-white text-justify mt-6 ml-7.5"
             style={{
               fontSize: "18px",
               fontFamily: "MyCustomFont",
-              margin: "0 30px",
               lineHeight: "24px",
             }}
           >
