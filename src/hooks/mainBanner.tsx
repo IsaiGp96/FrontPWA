@@ -8,7 +8,10 @@ const mainBanner = () => {
 
   return (
     <>
-      <div className="bg-[#0b0907] sticky top-0 z-30" style={{margin: "-2rem"}}>
+      <div
+        className="bg-[#0b0907] sticky top-0 z-30"
+        style={{ margin: "-2rem" }}
+      >
         <nav className="mx-auto flex items-center justify-between py-1.5 px-10 lg:px-8">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1 p-1.5">
@@ -104,49 +107,48 @@ const mainBanner = () => {
             </div>
             <div className="mt-6">
               <div className="py-6 grid gap-6">
-                  <Link
-                    to="/wiki"
-                    className="text-sm/6 font-semibold"
-                    style={{
-                      ...(location.pathname == "/wiki" && {
-                        color: "#bbfbff",
-                      }),
-                    }}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Wiki
-                  </Link>
-                  <Link
-                    to="/estadisticas"
-                    className="text-sm/6 font-semibold"
-                    style={{
-                      ...(location.pathname == "/estadisticas" && {
-                        color: "#bbfbff",
-                      }),
-                    }}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Estadísticas
-                  </Link>
-                  <Link
-                    to="/acerca"
-                    className="text-sm/6 font-semibold"
-                    style={{
-                      ...(location.pathname == "/acerca" && {
-                        color: "#bbfbff",
-                      }),
-                    }}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Acerca de
-                  </Link>
+                <Link
+                  to="/wiki"
+                  className="text-sm/6 font-semibold"
+                  style={{
+                    ...(location.pathname == "/wiki" && {
+                      color: "#bbfbff",
+                    }),
+                  }}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Wiki
+                </Link>
+                <Link
+                  to="/estadisticas"
+                  className="text-sm/6 font-semibold"
+                  style={{
+                    ...(location.pathname == "/estadisticas" && {
+                      color: "#bbfbff",
+                    }),
+                  }}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Estadísticas
+                </Link>
+                <Link
+                  to="/acerca"
+                  className="text-sm/6 font-semibold"
+                  style={{
+                    ...(location.pathname == "/acerca" && {
+                      color: "#bbfbff",
+                    }),
+                  }}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Acerca de
+                </Link>
               </div>
             </div>
           </div>
         </dialog>
       </div>
-
-      <Outlet />
+        <Outlet />
     </>
   );
 };

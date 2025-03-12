@@ -23,14 +23,13 @@ function App() {
         }}
       ></div>
       {/* Contenido principal */}
-      <div className="relative">
+      <div className="w-full relative">
+        {banner}
         <Routes>
-          <Route path='/' element={banner}>
             <Route index element={<Home/>}/>
-            <Route path='wiki' element={<Wiki/>}/>
-            <Route path='estadisticas' element={<Estadisticas/>}/>
-            <Route path='acerca' element={<Acercade/>}/>
-          </Route>
+            <Route path='/wiki' element={<Wiki/>}/>
+            <Route path='/estadisticas' element={<Estadisticas/>}/>
+            <Route path='/acerca' element={<Acercade/>}/>
         </Routes>
       </div>
     </div>
