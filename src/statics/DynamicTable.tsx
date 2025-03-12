@@ -70,7 +70,7 @@ const DynamicTable: React.FC = () => {
           No hay datos disponibles.
         </p>
       ) : (
-        <div className="relative flex flex-col overflow-hidden rounded-lg bg-clip-border shadow-md">
+        <div className="relative flex flex-col overflow-x-auto rounded-lg bg-clip-border shadow-md">
           <table className="w-full border-collapse border-[#f1f0e6] rounded-lg table-auto">
             {/* Encabezado */}
             <thead className="bg-[#231f1a] rouded-t-lg">
