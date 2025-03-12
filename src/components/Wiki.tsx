@@ -27,7 +27,7 @@ const Wiki: React.FC = () => {
   return (
     <div>
       {/* Contenido principal con scroll vertical */}
-      <div className="relative flex flex-col pt-12">
+      <div className="relative flex flex-col pt-12 max-w-7xl mx-auto">
         <div className="w-full flex flex-col p-8">
           <div className="mx-auto" style={{ fontFamily: "MyCustomFont" }}>
             <h1 className="text-4xl text-white font-bold mb-4 text-left">

@@ -71,7 +71,7 @@ const Carousel: React.FC = () => {
   return (
     <>
       {/* <Comentarios /> */}
-      <div className="py-6 w-full px-7.5">
+      <div className="py-6 w-full">
         <p
           className="text-white text-left"
           style={{

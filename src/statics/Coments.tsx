@@ -42,7 +42,7 @@ const Coments: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-[#231f1a] p-6 rounded-lg shadow-lg">
+    <div className="max-w-md mx-auto bg-[#231f1a] p-6 mb-12 rounded-lg shadow-lg">
       <h2 className="text-2xl font-semibold mb-4 text-white text-center">
         Déjanos tu comentario
       </h2>
