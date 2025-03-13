@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Home from './components/Home'
+import Acercade from './components/Acercade';
+import useHeaderGif from './hooks/useHeaderGift';
+import mainBanner from './hooks/mainBanner';
+import { Routes, Route } from 'react-router-dom';
+import Wiki from './components/Wiki';
+import Estadisticas from './components/Estadisticas';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const headerGif = useHeaderGif();
+  const banner = mainBanner();
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="w-full h-full">
+      {/* Fondo global con la imagen GIF */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${headerGif})`,
+          opacity: 0.5,
+          transform: "rotate(180deg)",
+        }}
+      ></div>
+      {/* Contenido principal */}
+      <div className="w-full relative">
+        {banner}
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='/wiki' element={<Wiki />} />
+          <Route path='/estadisticas' element={<Estadisticas />} />
+          <Route path='/acerca' element={<Acercade />} />
+        </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
