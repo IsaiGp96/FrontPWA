@@ -14,7 +14,7 @@ const Carousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    fetch("http://192.168.1.75:3000/api/getCommentsFromFirebase")
+    fetch("http://192.168.1.80:3000/api/getCommentsFromFirebase")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
