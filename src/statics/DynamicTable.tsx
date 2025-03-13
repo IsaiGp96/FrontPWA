@@ -11,7 +11,7 @@ const DynamicTable: React.FC = () => {
     try {
       console.log("Iniciando petición a la API");
       const response = await fetch(
-        `http://192.168.1.80:3000/api/getDataFromFirebase`,
+        `http://localhost:3000/api/getDataFromFirebase`,
         { cache: "no-store" }
       );
       if (!response.ok) {

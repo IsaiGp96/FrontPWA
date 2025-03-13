@@ -4,7 +4,7 @@ import React from "react";
 const Wiki: React.FC = () => {
   const downloadImage = async (object: string) => {
     // URL del endpoint para descargar la imagen, ajustar según sea necesario
-    const uri = `http://192.168.1.80:3000/api/getImageFromBackend/${object}`;
+    const uri = `http://localhost:3000/api/getImageFromBackend/${object}`;
     // Crea un enlace dinámico y simula un click para descargar la imagen
     try {
       const response = await fetch(uri);
