@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import naicaLogo from "../assets/images/naicaLogo.png";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
