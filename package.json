@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://isaigp96.github.io/FrontPWA/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
