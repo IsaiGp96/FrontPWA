@@ -12,7 +12,8 @@ var urlsToCache = [
     './src/assets/icons/icon-128x128.png',
     './src/assets/icons/icon-96x96.png',
     './src/assets/icons/icon-72x72.png',
-    './src/assets/icons/icon.png'
+    './src/assets/icons/icon.png',
+    './src/assets/icons/apple-touch-icon.png'
 ];
 
 
