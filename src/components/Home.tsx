@@ -57,8 +57,9 @@ const Home: React.FC = () => {
             <img
               src={loreImage}
               alt="Lore"
-              className="w-[500px] h-[330px] mt-5"
+              className="w-full max-w-[500px] h-auto mt-5"
             />
+
           </div>
         </div>
         <Carousel />

@@ -1,6 +1,6 @@
 {
     "name": "Naica",
-    "short_name": "MiApp",
+    "short_name": "Naica",
     "description": "Una descripción breve de mi aplicación PWA.",
     "start_url": "/",
     "display": "standalone",

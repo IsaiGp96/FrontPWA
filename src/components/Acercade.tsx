@@ -4,12 +4,12 @@ import Coments from "../statics/Coments";
 
 const Acercade: React.FC = () => {
   return (
-    <div className="m-4">
+    <div>
       <div className="relative flex flex-col pt-12 max-w-7xl h-screen justify-self-center">
-        <div style={{ fontFamily: "MyCustomFont" }} className="px-4 pt-6 pb-0">
+        <div style={{ fontFamily: "MyCustomFont" }} className="px-4 pt-6">
           <div className="flex flex-col md:flex-row justify-between md:items-start">
             {/* Sección de información */}
-            <div className="md:w-2/3 mb-8 md:mb-0 md:mr-8 lg:mr-8">
+            <div className="md:w-2/3 md:mr-8 lg:mr-8">
               <h1 className="text-4xl text-white font-bold mb-4 text-justify">
                 Acerca de nosotros
               </h1>
@@ -23,7 +23,7 @@ const Acercade: React.FC = () => {
                 </p>
               </div>
 
-              <div className="mb-8">
+              <div>
                 <h2 className="text-2xl text-white font-semibold mb-2">
                   Contáctanos
                 </h2>
