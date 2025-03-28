@@ -167,31 +167,79 @@ const Wiki: React.FC = () => {
               </p>
               <div className="container mx-auto px-4">
                 <div className="mx-auto px-8 py-6 bg-[#231f1a] rounded-lg shadow-lg">
+
                   <p
-                    className="text-white text-base"
+                    className="text-white text-base mt-4"
                     style={{ textAlign: "justify" }}
                   >
-                    <span className="font-semibold">Libro:</span> Un libro que
-                    contiene secretos de la cueva.
+                    <span className="font-semibold">Detonador:</span> Un objeto
+                    que se ha usado aquí hace tiempo.
                   </p>
                   <button
                     className="w-full mt-2 p-2 bg-[#06e5ee] text-[#001f20] font-semibold rounded transition-all hover:bg-[#bbfbff]"
-                    onClick={() => downloadImage("book")}
+                    onClick={() => downloadImage("detonator")}
                   >
-                    Descargar Modelo Libro
+                    Descargar Modelo Detonador
+                  </button>{" "}
+                  <p
+                    className="text-white text-base mt-4"
+                    style={{ textAlign: "justify" }}
+                  >
+                    <span className="font-semibold">Dinamita:</span> 
+                    Las explosiones no le hacen mal a nadie.
+                  </p>
+                  <button
+                    className="w-full mt-2 p-2 bg-[#06e5ee] text-[#001f20] font-semibold rounded transition-all hover:bg-[#bbfbff]"
+                    onClick={() => downloadImage("dinamita")}
+                  >
+                    Descargar Modelo Dinamita
                   </button>
                   <p
                     className="text-white text-base mt-4"
                     style={{ textAlign: "justify" }}
                   >
-                    <span className="font-semibold">Identificación:</span> Una
-                    misteriosa identificación encontrada dentro de la cueva.
+                    <span className="font-semibold">Bobina:</span> 
+                    Fundamental para conectar el detonador con la dinamita.
+
                   </p>
                   <button
                     className="w-full mt-2 p-2 bg-[#06e5ee] text-[#001f20] font-semibold rounded transition-all hover:bg-[#bbfbff]"
-                    onClick={() => downloadImage("identification")}
+                    onClick={() => downloadImage("spool")}
                   >
-                    Descargar Modelo Identificación
+                    Descargar Modelo Bobina
+                  </button>
+
+
+                </div>
+              </div>
+
+              {/* Objeto de Historia */}
+              <h3 className="text-xl text-white font-medium text-left mt-8">
+                Objeto de Historia
+              </h3>
+              <p
+                className="text-white text-base mb-4"
+                style={{ textAlign: "justify" }}
+              >
+                <span className="font-semibold">Descripción:</span> Los objetos
+                que le ayudan al protagonista a descubrir la verdad.
+              </p>
+              <div className="container mx-auto px-4">
+                <div className="mx-auto px-8 py-6 bg-[#231f1a] rounded-lg shadow-lg">
+
+
+                  <p
+                    className="text-white text-base mt-4"
+                    style={{ textAlign: "justify" }}
+                  >
+                    <span className="font-semibold">Pico:</span> Un objeto que
+                    parece ser usado hace tiempo.
+                  </p>
+                  <button
+                    className="w-full mt-2 p-2 bg-[#06e5ee] text-[#001f20] font-semibold rounded transition-all hover:bg-[#bbfbff]"
+                    onClick={() => downloadImage("pickaxe")}
+                  >
+                    Descargar Modelo Pico
                   </button>
                   <p
                     className="text-white text-base mt-4"
@@ -210,31 +258,29 @@ const Wiki: React.FC = () => {
                     className="text-white text-base mt-4"
                     style={{ textAlign: "justify" }}
                   >
-                    <span className="font-semibold">Pico:</span> Un objeto que
-                    parece ser usado hace tiempo.
+                    <span className="font-semibold">Identificación:</span> Una
+                    misteriosa identificación encontrada dentro de la cueva.
                   </p>
                   <button
                     className="w-full mt-2 p-2 bg-[#06e5ee] text-[#001f20] font-semibold rounded transition-all hover:bg-[#bbfbff]"
-                    onClick={() => downloadImage("pickaxe")}
+                    onClick={() => downloadImage("identification")}
                   >
-                    Descargar Modelo Pico
+                    Descargar Modelo Identificación
                   </button>
-                </div>
-              </div>
+                  <p
+                    className="text-white text-base"
+                    style={{ textAlign: "justify" }}
+                  >
+                    <span className="font-semibold">Libro:</span> Un libro que
+                    contiene secretos de la cueva.
+                  </p>
+                  <button
+                    className="w-full mt-2 p-2 bg-[#06e5ee] text-[#001f20] font-semibold rounded transition-all hover:bg-[#bbfbff]"
+                    onClick={() => downloadImage("book")}
+                  >
+                    Descargar Modelo Libro
+                  </button>
 
-              {/* Objeto de Historia */}
-              <h3 className="text-xl text-white font-medium text-left mt-8">
-                Objeto de Historia
-              </h3>
-              <p
-                className="text-white text-base mb-4"
-                style={{ textAlign: "justify" }}
-              >
-                <span className="font-semibold">Descripción:</span> Los objetos
-                que le ayudan al protagonista a descubrir la verdad.
-              </p>
-              <div className="container mx-auto px-4">
-                <div className="mx-auto px-8 py-6 bg-[#231f1a] rounded-lg shadow-lg">
                   <p
                     className="text-white text-base"
                     style={{ textAlign: "justify" }}
@@ -261,19 +307,8 @@ const Wiki: React.FC = () => {
                   >
                     Descargar Modelo Jaula de pájaros
                   </button>
-                  <p
-                    className="text-white text-base mt-4"
-                    style={{ textAlign: "justify" }}
-                  >
-                    <span className="font-semibold">Detonador:</span> Un objeto
-                    que se ha usado aquí hace tiempo.
-                  </p>
-                  <button
-                    className="w-full mt-2 p-2 bg-[#06e5ee] text-[#001f20] font-semibold rounded transition-all hover:bg-[#bbfbff]"
-                    onClick={() => downloadImage("detonator")}
-                  >
-                    Descargar Modelo Detonador
-                  </button>{" "}
+                  {/* Nuevos */}
+
                 </div>
               </div>
 

@@ -60,9 +60,16 @@ const Home: React.FC = () => {
               className="w-full max-w-[500px] h-auto mt-5"
             />
 
+            <div  className="mt-5">
+              <iframe src="https://www.youtube.com/embed/3UC1oMZq_is?si=hwOVNR51IFHjitd0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            </div>
           </div>
+
         </div>
-        <Carousel />
+        <div>
+          <Carousel />
+
+        </div>
       </div>
     </div>
   );
