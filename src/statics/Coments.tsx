@@ -18,7 +18,7 @@ const Coments: React.FC = () => {
 
     setLoading(true);
     try {
-      const response = await fetch("http://10.1.100.132:3000/api/addComment", {
+      const response = await fetch("https://backpwa-a0yz.onrender.com/api/addComment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
