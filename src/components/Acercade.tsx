@@ -27,7 +27,7 @@ const Acercade: React.FC = () => {
                 <h2 className="text-2xl text-white font-semibold mb-2">
                   Contáctanos
                 </h2>
-                <p className="text-white text-base">¡Habla con nostros!</p>
+                <p className="text-white text-base">¡Habla con nosotros!</p>
                 <div className="mt-4">
                   <p className="text-white text-base mt-4">
                     Email: soporte@lanucz.com
